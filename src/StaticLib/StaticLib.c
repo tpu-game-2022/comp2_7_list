@@ -30,7 +30,7 @@ void push_front(list* l, node* p)
 // pの次のノードを削除
 void remove_next(list* l, node* p)
 {
-	if (p->pNext != NULL)
+	if (p->pNext != NULL&&l->header)
 	{
 		p->pNext = p->pNext->pNext;
 	}
